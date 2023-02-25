@@ -1,20 +1,20 @@
-#include<stdio.h>
-/**
- * main - entry code
- *
- * return : always 0 (success)
- *
- */
+#include <stdio.h>
 
+/**
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int ch = 'a';
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (ch <= 'z')
+	for (i = 0; i < 26; i++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
 }
+
